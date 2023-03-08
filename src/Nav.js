@@ -1,11 +1,15 @@
 import "./Nav.css";
-import {useState} from 'react'
+import { useState } from "react";
 export default function Nav() {
-    const [show, handleShow] = useState(false)
-    const transitionNavBar = () => {
-        
-    }  
-    return (
+  const [show, handleShow] = useState(false);
+  const transitionNavBar = () => {
+    if (window.scrollY > 100) {
+      handleShow(true);
+    } else {
+      handleShow(false);
+    }
+  };
+  return (
     <>
       <div className="nav nav__black">
         <div className="nav__contents">
