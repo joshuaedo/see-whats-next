@@ -1,7 +1,7 @@
 import "./HomeScreen.css";
-import Nav from "./Nav";
-import Banner from "./Banner";
-import Rows from "./Rows";
+import Nav from "../Nav";
+import Banner from "../Banner";
+import Rows from "../Rows";
 export default function HomeScreen() {
   return (
     <>
