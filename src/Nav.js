@@ -16,7 +16,7 @@ export default function Nav() {
   }, []);
   return (
     <>
-      <div className="nav nav__black">
+      <div className={`nav ${show && "nav__black"}`}>
         <div className="nav__contents">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Logonetflix.png/800px-Logonetflix.png?20170904093427"

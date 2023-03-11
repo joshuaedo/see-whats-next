@@ -1,50 +1,14 @@
 import "./HomeScreen.css";
 import Nav from "./Nav";
+import Banner from "./Banner";
+import Rows from "./Rows";
 export default function HomeScreen() {
   return (
     <>
       <div className="homeScreen">
         <Nav />
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        <p>wyd brev</p>
-        {/* Banner */}
-        {/* Rows */}
+        <Banner />
+        <Rows />
       </div>
     </>
   );
