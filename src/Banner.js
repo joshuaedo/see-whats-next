@@ -31,7 +31,7 @@ export default function Banner() {
         style={{
           backgroundPosition: "center center",
           backgroundSize: "cover",
-          backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
+          backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
         }}
       >
         <div className="banner__contents">
