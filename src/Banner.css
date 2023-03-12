@@ -1,8 +1,14 @@
 .banner {
   position: relative;
-  object-fit: contain;
   color: white;
   height: 90vh;
+  overflow: hidden;
+}
+
+#videoBG {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .banner__contents {
@@ -24,19 +30,6 @@
   font-size: 0.8rem;
   max-width: 360px;
   height: 80px;
-}
-
-.banner--fadeBottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 25%;
-  background-image: linear-gradient(
-    180deg,
-    transparent,
-    rgba(37, 37, 37, 0.61),
-    #111
-  );
 }
 
 .banner__button {

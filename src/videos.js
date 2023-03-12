@@ -1,10 +1,23 @@
-import allOfUsAreDead from 'src/assets/videos/all-of-us-are-dead.mp4';
-import birdBox from 'src/assets/videos/bird-box.mp4';
-import dontLookUp from 'src/assets/videos/do-not-look-up.mp4';
-import elCamino from 'src/assets/videos/el-camino.mp4';
-import squidGame from 'src/assets/videos/squid-game.mp4';
-import strangerThings from 'src/assets/videos/stranger-things.mp4';
-import theMitchells from 'src/assets/videos/the-mitchells.mp4';
-import theGrayMan from 'src/assets/videos/the-gray-man.mp4';
-import wednesday from 'src/assets/videos/wednesday.mp4';
-import you from 'src/assets/videos/you.mp4';
+import allOfUsAreDead from "./assets/videos/all-of-us-are-dead.mp4";
+import birdBox from "./assets/videos/bird-box.mp4";
+import dontLookUp from "./assets/videos/do-not-look-up.mp4";
+import elCamino from "./assets/videos/el-camino.mp4";
+import squidGame from "./assets/videos/squid-game.mp4";
+import strangerThings from "./assets/videos/stranger-things.mp4";
+import theMitchells from "./assets/videos/the-mitchells.mp4";
+import theGrayMan from "./assets/videos/the-gray-man.mp4";
+import wednesday from "./assets/videos/wednesday.mp4";
+import you from "./assets/videos/you.mp4";
+
+export const videos = [
+  allOfUsAreDead,
+  birdBox,
+  dontLookUp,
+  elCamino,
+  squidGame,
+  strangerThings,
+  theMitchells,
+  theGrayMan,
+  wednesday,
+  you,
+];

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Row.css";
 import axios from "./axios";
+
 export default function Row({ title, fetchUrl, isLargeRow = false }) {
   const [movies, setMovies] = useState([]);
   const base_url = "https://image.tmdb.org/t/p/original/";

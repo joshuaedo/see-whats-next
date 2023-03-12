@@ -1,26 +1,43 @@
 import { useEffect, useState } from "react";
 import "./Banner.css";
+import { videos } from "./videos";
+import { shuffle } from "lodash";
+
 export default function Banner() {
-  // function truncate(string, n) {
-  //   return string?.length > n ? string.substr(0, n - 1) + "..." : string;
-  // }
+  // I want you to shuffle the src with the values in videos[]
+  const [
+    allOfUsAreDead,
+    birdBox,
+    dontLookUp,
+    elCamino,
+    squidGame,
+    strangerThings,
+    theMitchells,
+    theGrayMan,
+    wednesday,
+    you,
+  ] = videos;
+  let index = Math.floor(Math.random() * videos.length);
+  useEffect(() => {
+    var video = document.getElementById("videoBG");
+    video.oncanplaythrough = function () {
+      video.muted = true;
+      video.play();
+    };
+  }, []);
 
   return (
     <>
       <header className="banner">
-        {/* <div className="banner__contents">
-          <h1 className="banner__title">
-            {movie?.title || movie?.name || movie?.original_name}
-          </h1>
-          <div className="banner__buttons">
-            <button className="banner__button">Play</button>
-            <button className="banner__button">My List</button>
-            <h1 className="banner__description">
-              {truncate(movie?.overview, 150)}
-            </h1>
-          </div>
-        </div> */}
-        <div className="banner--fadeBottom" />
+        <video
+          id="videoBG"
+          src={videos[index]}
+          type="video/mp4"
+          autoplay
+          muted
+          controls
+          loop
+        />
       </header>
     </>
   );
