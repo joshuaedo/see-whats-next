@@ -14,7 +14,7 @@
 }
 
 .row__poster {
-  max-height: 10rem;
+  height: 10rem;
   object-fit: contain;
   margin-right: 0.5rem;
   width: 100%;
@@ -29,6 +29,20 @@
 
 .row__posterLarge {
   max-height: 15rem;
+}
+
+.youtube__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 @media only screen and (max-width: 600px) {
