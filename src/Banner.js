@@ -31,6 +31,7 @@ export default function Banner() {
       <header className="banner">
         <video
           id="videoBG"
+          className="skeleton"
           src={videos[index]}
           type="video/mp4"
           autoplay

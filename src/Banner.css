@@ -10,7 +10,17 @@
   height: 100%;
   object-fit: cover;
 }
-
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading {
+  0% {
+    background-color: #313131;
+  }
+  100% {
+    background-color: #525252;
+  }
+}
 .banner__contents {
   margin-left: 2.2rem;
   padding-top: 16rem;
