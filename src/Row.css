@@ -171,6 +171,13 @@ iframe,
   .row__poster {
     height: 6rem;
   }
+  .skeletonRow__poster {
+    height: 6rem;
+    margin-right: 0.15rem;
+    margin-left: 0.15rem;
+    padding-left: 5.1rem;
+    padding-right: 5.1rem;
+  }
   .row__posters button {
     display: none;
   }
