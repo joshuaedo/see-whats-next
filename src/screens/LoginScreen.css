@@ -95,6 +95,6 @@
 
 @media only screen and (min-width: 1030px) {
   .loginScreen__body {
-    right: 13%;
+    left: 24%;
   }
 }

@@ -1,6 +1,6 @@
 import "./LoginNav.css";
 import { useEffect, useState } from "react";
-export default function Nav() {
+export default function Nav(props) {
   const [show, handleShow] = useState(false);
   const transitionNavBar = () => {
     if (window.scrollY > 100) {
@@ -23,7 +23,9 @@ export default function Nav() {
             alt="netflix logo"
             className="nav__logo"
           />
-          <button className="nav__button">Sign up</button>
+          <button onClick={props.onClick} className="nav__button">
+            Sign up
+          </button>
         </div>
       </div>
     </>

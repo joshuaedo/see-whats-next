@@ -181,7 +181,7 @@ export default function Row({ title, fetchUrl }) {
                         {truncate(movie?.overview, 350)}
                       </p>
                     </div>
-                    {/* I want to rendera div with a h2 that says Loading until the videoId component loads */}
+                    {/* I want to render div with a h2 that says Loading until the videoId component loads */}
                     <div className="youtube__trailer">
                       {" "}
                       {videoId ? (
