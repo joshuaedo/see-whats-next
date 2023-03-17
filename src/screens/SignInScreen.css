@@ -1,12 +1,91 @@
 .signInScreen {
   position: absolute;
-  top: 30%;
+  top: 20%;
   z-index: 1;
   color: #fff;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 70px;
-  max-width: 50%;
-  text-align: center;
-  align-self: center;
+  right: 35%;
+  left: 35%;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 3px;
+}
+
+.signInScreen > form {
+  display: grid;
+  flex-direction: column;
+}
+.signIn__Button,
+.signIn__Input {
+  outline-width: 0;
+  border: none;
+  max-width: 600px;
+  border-radius: 2px;
+  height: 3rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.signIn__Button {
+  background-color: #e50914;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  cursor: pointer;
+}
+
+.signInScreen > form > h5 {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.signIn__gray {
+  color: gray;
+}
+
+.signIn__link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1030px) {
+  .signInScreen {
+    top: 21%;
+    right: 30%;
+    left: 30%;
+    padding: 1.8rem;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .signInScreen {
+    top: 22%;
+    right: 25%;
+    left: 25%;
+    padding: 1.7rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .signInScreen {
+    top: 23%;
+    right: 25%;
+    left: 25%;
+    padding: 1.6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .signInScreen {
+    top: 25%;
+    right: 10%;
+    left: 10%;
+    padding: 1.2rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .signInScreen {
+    top: 30%;
+    right: 5%;
+    left: 5%;
+    padding: 1rem;
+  }
 }

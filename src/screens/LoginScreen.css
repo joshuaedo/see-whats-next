@@ -24,11 +24,11 @@
   top: 30%;
   z-index: 1;
   color: #fff;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
+  right: 0%;
+  left: 0%;
+  padding-left: 15rem;
+  padding-right: 15rem;
   text-align: center;
-  align-self: center;
 }
 
 .loginScreen__body > h1 {
@@ -55,6 +55,7 @@
   border: none;
   max-width: 600px;
   border-radius: 2px;
+  font-size: 0.8rem;
 }
 
 .loginScreen__input > form > button {
@@ -68,7 +69,29 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1030px) {
+  .loginScreen__body {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .loginScreen__body {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .loginScreen__body {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
 @media only screen and (max-width: 600px) {
+  .loginScreen__body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .loginScreen__body > h1 {
     font-size: 1.5rem;
     margin-bottom: 0.8rem;
@@ -83,7 +106,7 @@
   }
   .loginScreen__input > form > input {
     display: block;
-    width: 90%;
+    width: 88%;
     margin-bottom: 0.8rem;
     padding: 10px 20px;
   }
@@ -92,9 +115,15 @@
     padding: 10px 20px;
   }
 }
-
-@media only screen and (min-width: 1030px) {
+@media only screen and (max-width: 420px) {
+  .loginScreen__input > form > input {
+    display: block;
+    width: 85%;
+    margin-bottom: 0.8rem;
+    padding: 10px 20px;
+  }
   .loginScreen__body {
-    left: 24%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }

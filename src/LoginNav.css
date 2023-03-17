@@ -41,7 +41,7 @@
   border: none;
   cursor: pointer;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 @media only screen and (max-width: 600px) {

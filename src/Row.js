@@ -10,6 +10,7 @@ export default function Row({ title, fetchUrl }) {
   const API_KEY = "f025efcd2e89d572e5a3ac07a0ce13d3";
   const [clickedMovieId, setClickedMovieId] = useState(null);
   const [videoId, setVideoId] = useState(null);
+  // eslint-disable-next-line
   const [scrollPosition, setScrollPosition] = useState(0);
   const rowRef = useRef(null);
 
@@ -41,7 +42,7 @@ export default function Row({ title, fetchUrl }) {
   function handleLeftClick() {
     const container = rowRef.current;
     if (container) {
-      const scrollStep = -200;
+      const scrollStep = +200;
       const start = container.scrollLeft;
       let currentTime = 0;
 
@@ -68,7 +69,7 @@ export default function Row({ title, fetchUrl }) {
   function handleRightClick() {
     const container = rowRef.current;
     if (container) {
-      const scrollStep = 200;
+      const scrollStep = -200;
       const start = container.scrollLeft;
       let currentTime = 0;
 

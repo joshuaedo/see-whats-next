@@ -2,7 +2,7 @@ import "./Nav.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Nav() {
+export default function ProfileNav() {
   const navigate = useNavigate();
   const [show, handleShow] = useState(false);
   const transitionNavBar = () => {
@@ -21,12 +21,24 @@ export default function Nav() {
     <>
       <div className={`nav ${show && "nav__black"}`}>
         <div className="nav__contents">
-          <img
-            onClick={() => navigate("/")}
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Logonetflix.png/800px-Logonetflix.png?20170904093427"
-            alt="netflix logo"
-            className="nav__logo"
-          />
+          <div className="profile__escape">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="white"
+              className="w-6 h-6"
+              onClick={() => navigate("/")}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+
           <img
             onClick={() => navigate("/profile")}
             src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png?20201013161117"

@@ -30,6 +30,15 @@
   cursor: pointer;
 }
 
+.profile__escape {
+  position: fixed;
+  left: 20px;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
 .nav__avatar {
   position: fixed;
   right: 20px;
