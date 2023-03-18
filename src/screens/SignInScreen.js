@@ -2,12 +2,14 @@ import "./SignInScreen.css";
 import { useState, useRef } from "react";
 import { auth } from "../firebase";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { useRecoilState } from "recoil";
+import { photoURLState } from "../atoms/photoAtom.js";
 
 export default function SignInScreen() {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
   const provider = new GoogleAuthProvider();
-
+  const [userImg, setUserImg] = useRecoilState(photoURLState);
   const [signedUp, setSignedUp] = useState(true);
   const handleSignUp = () => {
     if (signedUp) {
@@ -54,11 +56,13 @@ export default function SignInScreen() {
 
     signInWithPopup(auth, provider)
       .then((result) => {
-        console.log(result);
+        setUserImg(result.user.photoURL);
       })
       .catch((error) => {
         alert(error.message);
       });
+
+    console.log(userImg);
   };
 
   return (
