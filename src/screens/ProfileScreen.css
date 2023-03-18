@@ -1,4 +1,145 @@
-.profileScreen{
-    height: 100vh;
-    color: white;
+.profileScreen {
+  height: 100vh;
+  color: white;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.profileScreen__body {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  padding-top: 2rem;
+  max-width: 50rem;
+}
+
+.profileScreen__body > h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  border-bottom: 1px solid #282c2d;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  padding: 1%;
+}
+
+.profileScreen__info {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.2rem;
+}
+
+.profileScreen__avatar {
+  height: 9rem;
+  border-radius: 3px;
+}
+
+.profileScreen__details {
+  margin-left: 1rem;
+  width: 50%;
+}
+
+.profileScreen__details > h2 {
+  background-color: gray;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 1.2rem;
+  border-radius: 3px;
+}
+
+.profileScreen__plans {
+  margin-top: 1.2rem;
+}
+
+.profileScreen__plans > h3 {
+  border-bottom: 1px solid #282c2d;
+  padding-bottom: 0.6rem;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+
+.plans__info > h6 {
+  font-weight: 400;
+  padding-top: 5%;
+}
+
+.freePlan > button {
+  background-color: gray !important;
+}
+
+.plans > button {
+  cursor: not-allowed;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  width: 8rem;
+  opacity: 0.91;
+}
+
+.profileScreen__signOut {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+  border-radius: 3px;
+  margin-top: 5%;
+  opacity: 0.91;
+}
+
+.profileScreen__signOut:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .profileScreen__avatar {
+    height: 6rem;
+  }
+  .profileScreen__details {
+    margin-left: 1rem;
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .profileScreen__avatar {
+    display: none;
+  }
+  .profileScreen__details {
+    margin-left: 0;
+    width: 75%;
+  }
+  .profileScreen__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 4rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .profileScreen__details {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .plans > button {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    width: 6.5rem;
+  }
+  .profileScreen__plans {
+    padding-top: 1rem;
+  }
 }

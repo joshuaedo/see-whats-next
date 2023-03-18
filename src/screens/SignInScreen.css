@@ -1,6 +1,6 @@
 .signInScreen {
   position: absolute;
-  top: 20%;
+  top: 15%;
   z-index: 1;
   color: #fff;
   right: 35%;
@@ -33,6 +33,26 @@
   cursor: pointer;
   color: #fff;
   cursor: pointer;
+  opacity: 0.91;
+}
+
+.signIn__Button:hover {
+  opacity: 1;
+}
+
+.google {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.54);
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  opacity: 0.99;
+}
+
+.google > img {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 0.5rem;
 }
 
 .signInScreen > form > h5 {
@@ -51,7 +71,6 @@
 
 @media only screen and (max-width: 1030px) {
   .signInScreen {
-    top: 21%;
     right: 30%;
     left: 30%;
     padding: 1.8rem;
@@ -59,7 +78,6 @@
 }
 @media only screen and (max-width: 990px) {
   .signInScreen {
-    top: 22%;
     right: 25%;
     left: 25%;
     padding: 1.7rem;
@@ -67,7 +85,6 @@
 }
 @media only screen and (max-width: 768px) {
   .signInScreen {
-    top: 23%;
     right: 25%;
     left: 25%;
     padding: 1.6rem;
@@ -75,7 +92,6 @@
 }
 @media only screen and (max-width: 600px) {
   .signInScreen {
-    top: 25%;
     right: 10%;
     left: 10%;
     padding: 1.2rem;
@@ -83,7 +99,6 @@
 }
 @media only screen and (max-width: 420px) {
   .signInScreen {
-    top: 30%;
     right: 5%;
     left: 5%;
     padding: 1rem;

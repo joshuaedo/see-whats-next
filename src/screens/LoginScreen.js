@@ -29,7 +29,6 @@ export default function LoginScreen() {
 
             <div className="loginScreen__input">
               <form>
-                <input type="email" placeholder="Email Address" />
                 <button
                   onClick={() => {
                     setSignIn(true);

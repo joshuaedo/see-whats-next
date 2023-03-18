@@ -2,6 +2,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyDCImHH__4WZS16xpvJ97-kkgvkKumI8b0",
   authDomain: "joshuaedo-netflix.firebaseapp.com",
@@ -15,6 +16,7 @@ const firebaseConfig = {
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
+
 
 export { auth };
 export default db;

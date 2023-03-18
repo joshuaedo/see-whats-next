@@ -4,6 +4,7 @@
   background: url("https://mebincdn.themebin.com/1664271579476.jpg") center
     no-repeat;
   background-size: cover;
+  overflow-y: scroll;
 }
 
 .loginScreen__gradient {
@@ -67,6 +68,11 @@
   border-radius: 2px;
   padding: 16px 20px;
   cursor: pointer;
+  opacity: 0.91;
+}
+
+.loginScreen__input > form > button:hover {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1030px) {
