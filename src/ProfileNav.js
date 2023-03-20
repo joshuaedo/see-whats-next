@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { photoURLState } from "./atoms/photoAtom.js";
 
+
+// Boo! Did I scare you?
 export default function ProfileNav() {
   const navigate = useNavigate();
   const [userImg, setUserImg] = useRecoilState(photoURLState);
