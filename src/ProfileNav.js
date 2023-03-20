@@ -5,7 +5,7 @@ import { useRecoilState } from "recoil";
 import { photoURLState } from "./atoms/photoAtom.js";
 
 
-// Boo! Did I scare you?
+// Boo!
 export default function ProfileNav() {
   const navigate = useNavigate();
   const [userImg, setUserImg] = useRecoilState(photoURLState);
