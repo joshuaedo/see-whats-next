@@ -1,7 +1,8 @@
-# Netflix Clone
+# See What's Next
 
-This is a clone of the Netflix website built using React, Redux, TMDb API,
-React Router, React YouTube, Redux Toolkit, Axios, Lodash, Recoil, and Firebase. The project includes the following features:
+This is a movie trailer app inspired by Netflix's UI. 
+It was built using React, Redux, TMDb API, React Router, React YouTube, Redux Toolkit, Axios,
+Lodash, Recoil, and Firebase. The project includes the following features:
 
 - User authentication with Firebase
 - Browse movies and TV shows
@@ -10,7 +11,7 @@ React Router, React YouTube, Redux Toolkit, Axios, Lodash, Recoil, and Firebase.
 
 ## Demo
 
-You can view a live demo of the project [here](https://joshuaedo-netflix.vercel.app).
+You can view a live demo of the project [here](https://see-whats-next.vercel.app).
 
 ## Installation
 
