@@ -11,7 +11,7 @@ Lodash, Recoil, and Firebase. The project includes the following features:
 
 ## Demo
 
-You can view a live demo of the project [here](https://see-whats-next.vercel.app).
+Google keeps flagging deployments as phishing sites so there is none. You can view a demo of the project [here](https://youtu.be/krHx-I6npkM).
 
 ## Installation
 
